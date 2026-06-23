@@ -92,14 +92,6 @@ The first line indicates that there are 30 vertices, 29 edges, and 4 layers.
 The next 4 lines indicate that the layers contain 8, 7, 8, and 7 vertices respectively.
 The following lines represent the edges between vertices of different layers.
 
-## Algorithm Overview
-
-DMCLS (Dual Mode Collaborative Local Search) is a local search algorithm designed for solving the Min-Max Edge Crossing Problem (MMECP). It features:
-
-- **Dual Evaluation Modes**: Two complementary evaluation strategies — the **critical mode** focusing on maximum crossing edges and the **perturbation mode** exploring broader search space — work collaboratively to balance intensification and diversification.
-- **Snapshot Recovery Mechanism**: Periodically restores to the best-found solution state to escape from local optima, with adaptive recovery strength control.
-- **Age-based Selection**: Incorporates an age mechanism to prefer selecting vertices that have not been moved for a long time, enhancing search diversity.
-- **Efficient Delta Evaluation**: Optimized incremental update strategy for efficiently computing the change in maximum crossings after each swap operation.
 
 ## Project Structure
 
