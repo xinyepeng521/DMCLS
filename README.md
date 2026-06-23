@@ -21,9 +21,9 @@ Before running, please configure the following parameters and paths in the `main
 
 ```cpp
 // Algorithm parameters
-Short_k = 6;          // Short-range search distance control
-Long_k = {1, 1};      // Long-range search distance control (numerator, denominator)
-s_restore = 3;        // Snapshot recovery strength factor
+Short_k = 6;          // Short-range move distance: layer_size / Short_k
+Long_k = {1, 1};      // Long-range move distance: layer_size / Long_k.second * Long_k.first
+s_restore = 3;        // Snapshot recovery strength: min_restore = nodeNum * s_restore
 
 // Instance folder path
 const std::string target_folder = "path/to/your/instances";
