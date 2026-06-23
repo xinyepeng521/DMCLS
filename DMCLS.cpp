@@ -1,5 +1,4 @@
-﻿//#include"MMACsolver6.h"
-//#include"tabu_weighted.h"
+
 #include"MMACsolver9.h"
 #include <iostream>
 #include <filesystem> 
@@ -10,11 +9,6 @@ int main()
      /*string file = "D:\\C++\\MMAC\\instances\\connected\\c1000_2000_25_4_3.txt";*/
     /* string file = "D:\\C++\\MMAC\\instances\\Rome\\rome.30.35.74.txt";*/
      /*string file = "D:\\C++\\MMAC\\instances\\North\\north.40.49.2.txt";*/
-   /*  Short_k = 6;
-     Long_k = 5;
-     s_restore = 7;
-     MMACsolver MMAC(file,3);
-     MMAC.solve();*/
 
      Short_k = 6;
      Long_k = { 1,1 };
